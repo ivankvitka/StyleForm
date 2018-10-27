@@ -137,7 +137,8 @@ password {
 }
 
 .terms-of-use,
-.login {
+.login,
+.more-info {
     text-decoration: none;
     color: #b7b7b7;
 }
@@ -166,7 +167,7 @@ password {
 }
 
 .btn:active {
-    background-color: rgba(255, 155, 100, 0.67);
+    background-color: #ff9B64;
 }
 
 .info {
