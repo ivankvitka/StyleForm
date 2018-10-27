@@ -1,0 +1,180 @@
+@font-face {
+    font-family: proxima-nova;
+    src: url("../fonts/proximaNova-semibold.ttf");
+}
+
+body {
+    width: 426px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.signup-block {
+    width: 100%;
+    padding: 30px 0 90px 42px;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+.form-header {
+    font-family: proxima-nova, sans-serif;
+    font-size: 22px;
+    color: #707070;
+}
+
+.form-header-part {
+    color: #b7b7b7;
+}
+
+.signup-form {
+    width: 340px;
+    padding: 30px 30px 10px;
+    box-shadow: 0 0 15px 2px silver;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.form-group {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.name-div,
+.surname-div {
+    width: 136px;
+}
+
+.name-div {
+    float: left;
+}
+
+.surname-div {
+    float: right;
+}
+
+.name,
+.surname,
+.user-name,
+.password,
+.email,
+password {
+    width: 100%;
+    height: 34px;
+    padding-left: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: proxima-nova, sans-serif;
+}
+
+::placeholder {
+    color: #b7b7b7;
+}
+
+.user-name,
+.password {
+    padding-right: 27px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: 98%;
+}
+
+.user-name {
+    background-image: url("../images/face.png");
+}
+
+.email {
+    margin-bottom: 15px;
+}
+
+.password {
+    background-image: url("../images/lock.png");
+}
+
+.checkbox {
+    position: absolute;
+    left: -9999px;
+}
+
+.checkbox-area {
+    padding-bottom: 15px;
+}
+
+.checkbox-label {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 11px;
+    color: #dddddd;
+}
+
+.checkbox-label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 10px;
+    height: 12px;
+    background: url("../images/checkbox.png") 0 2px no-repeat;
+}
+
+.checkbox:hover + .checkbox-label{
+    color: black;
+}
+
+.checkbox:checked + .checkbox-label::before {
+    background: url("../images/checked.png") no-repeat;
+}
+
+.terms-of-use,
+.login {
+    text-decoration: none;
+    color: #b7b7b7;
+}
+
+.button-block {
+    width: 95px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    line-height: 35px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #fea15d;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+
+.btn:hover {
+    background-color: #ff8a00;
+}
+
+.btn:active {
+    background-color: rgba(255, 155, 100, 0.67);
+}
+
+.info {
+    width: 180px;
+    margin: 0 auto;
+    font-family: proxima-nova, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    line-height: 20px;
+    color: #dddddd;
+}

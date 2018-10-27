@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+<div class="signup-block">
+    <h1 class="form-header">Signup <span class="form-header-part">Form</span></h1>
+    <form method="post" class="signup-form">
+        <div class="form-group clearfix">
+            <div class="name-div">
+                <input type="text" class="name" id="name" name="name" placeholder="First Name" required>
+            </div>
+            <div class="surname-div">
+                <input type="text" class="surname" id="surname" name="surname" placeholder="Last Name" required>
+            </div>
+        </div>
+        <input type="text" class="user-name" id="user-name" name="user-name" placeholder="Username" required>
+        <input type="email" class="email" id="email" name="email" placeholder="Email Address" required>
+        <input type="password" class="password" id="password" name="password" placeholder="Password" required>
+        <div class="checkbox-area">
+            <input type="checkbox" class="checkbox" id="agree" name="agree" required>
+            <label class="checkbox-label" for="agree">I Agree to the <a class="terms-of-use" href="https://www.google.com.ua">terms of
+                use</a></label>
+        </div>
+        <div class="button-block">
+            <button type="submit" class="btn" name="submit">Sign Up</button>
+        </div>
+        <p class="info">Have an account with us? <a class="login" href="https://www.google.com.ua">Login here</a><br>
+            More info about us here...</p>
+    </form>
+</div>
+</body>
+</html>
