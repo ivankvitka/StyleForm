@@ -3,19 +3,27 @@
     src: url("../fonts/proximaNova-semibold.ttf");
 }
 
+
+
 body {
-    width: 426px;
-    margin: 0 auto;
+    margin: 0;
+
 }
 
 .clearfix::after {
     content: "";
-    display: table;
+    display: block;
     clear: both;
 }
 
 .signup-block {
-    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 426px;
+    height: 530px;
     padding: 30px 0 90px 42px;
     box-sizing: border-box;
     background-color: #f7f7f7;
@@ -64,10 +72,11 @@ body {
 .user-name,
 .password,
 .email,
-password {
+.password {
     width: 100%;
     height: 34px;
     padding-left: 10px;
+    padding-right: 10px;
     background-color: #f0f0f0;
     border: none;
     border-radius: 5px;
@@ -144,14 +153,13 @@ password {
 }
 
 .button-block {
-    width: 95px;
-    margin: 0 auto;
-    box-sizing: border-box;
+    text-align: center;
 }
 
 .btn {
-    width: 100%;
     margin-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
     border: none;
     line-height: 35px;
     font-family: proxima-nova, sans-serif;
@@ -170,12 +178,18 @@ password {
     background-color: #ff9B64;
 }
 
-.info {
-    width: 180px;
-    margin: 0 auto;
+.footer {
     font-family: proxima-nova, sans-serif;
-    font-size: 11px;
     text-align: center;
-    line-height: 20px;
-    color: #dddddd;
+    font-size: 11px;
+    color: #b7b7b7;
+}
+
+.info {
+    display: inline-block;
+    width: 127px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
