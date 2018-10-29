@@ -188,6 +188,7 @@ body {
 .info {
     display: inline-block;
     width: 127px;
+    height: 25px;
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
